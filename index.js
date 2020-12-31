@@ -8,8 +8,6 @@ let output= $('#currentDay');
 let dateBtn= $('.dateBtn');
 let currentTime=moment().hours();
 
-
-
 saveBtn.on('click', function (){
 let inputValue=$(this).siblings('.description').val()
 let id=$(this).parent().attr('id')
