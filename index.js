@@ -6,8 +6,7 @@ $(document).ready(function(){
 let saveBtn= $('.saveBtn');
 let output= $('#currentDay');
 let dateBtn= $('.dateBtn');
-let currentTime=moment().hour;
-let timeBlocks= $('[id^=textarea')
+let currentTime=moment().hours();
 
 
 
@@ -32,7 +31,23 @@ $('#5 .description').val(localStorage.getItem('5'))
 // if time block is less than current time then add class of past
 // repeat for present and future
 
-for(var i in textarea) {
-    if 
+// for(var i in textarea) {
+//     if 
+// }
+function updateHour () {
+$('.time-block').each(function(){
+let timeBlock= $(this).attr('id')
+console.log(timeBlock)
+if (currentTime > timeBlock) {
+    $(this).addClass('past')
 }
+else if(currentTime < timeBlock) {
+    $(this).addClass('future')
+}
+else{
+    $(this).addClass('present')
+}
+})
+}
+updateHour()
 })
