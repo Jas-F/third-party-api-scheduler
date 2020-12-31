@@ -6,7 +6,7 @@ Create a simple calendar application that allows a user to save events for each 
 
 <br>
 
-## Utilize JQuery
+## Utilize moment.js to distinguish between past. present, or future
 
 ```
  timerInterval = setInterval(function() {
@@ -23,28 +23,27 @@ Create a simple calendar application that allows a user to save events for each 
 ```
 <br>
 
-## Feature CSS
+## Save text to local storage
 
 ```
-button{
-    background-color: crimson;
-    text-align: center;
-    font-family: sans-serif;
-    color: black;
-}
+saveBtn.on('click', function (){
+let inputValue=$(this).siblings('.description').val()
+let id=$(this).parent().attr('id')
+localStorage.setItem(id,inputValue)
+});
+
+$('#9 .description').val(localStorage.getItem('9'))
 ```
 <br>
 
-## Multiple Choice Quiz
+## Create time-blocks using HTML
 
 ```
-    question6: "Who Made This Quiz",
-    a:  "Jasmine Franklin The Coder",
-    b:  "Jasmine Franklin The Coder",
-    c:  "Jasmine Franklin The Coder",
-    d:  "Jasmine Franklin The Coder",
-    answer: "Jasmine Franklin The Coder"}
-]
+        <div class='row time-block' id='9'>
+          <div class="hour1 col-md-1">9:00 A.M.</div>
+          <textarea class='description col-md-10' type='text' id= 'input'></textarea>
+          <button class='saveBtn col-md-1 btn'>Save</button>
+        </div>
 ```
 
 <br>
@@ -55,10 +54,11 @@ button{
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Bootstrap](https://getbootstrap.com/)
+* [Jquery]
 
 ## Deployed Link
 
-* [See Live Site](https://jas-f.github.io/Web-api-code-quiz/)
+* [See Live Site](https://jas-f.github.io/third-party-api-scheduler/)
 
 ## License
 
@@ -74,7 +74,9 @@ Git bash,
 Visual studio,
 Google chrome,
 Bootstrap,
-JavaScript
+JavaScript,
+JQuery
+
 ## Authors
 
 **Jasmine Franklin** 
