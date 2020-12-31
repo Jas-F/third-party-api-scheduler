@@ -1,15 +1,15 @@
+
+$('#currentDay').text(moment().format('dddd') +","+(moment().format('MMMM Do YYYY, h:mm a')));
+
 $(document).ready(function(){
 
-
-
 let saveBtn= $('.saveBtn');
-let table= $('.table');
-let output= document.querySelector('#currentDay');
-let eventInput= document.querySelector('#description');
-let dateBtn= document.querySelector('button');
-let timeBtn= 
+let output= $('#currentDay');
+let dateBtn= $('.dateBtn');
 
-$('.saveBtn').on('click', function (){
+
+
+saveBtn.on('click', function (){
 let inputValue=$(this).siblings('.description').val()
 let id=$(this).parent().attr('id')
 localStorage.setItem(id,inputValue)
@@ -23,22 +23,6 @@ $('#1 .description').val(localStorage.getItem('1'))
 $('#2 .description').val(localStorage.getItem('2'))
 $('#3 .description').val(localStorage.getItem('3'))
 $('#4 .description').val(localStorage.getItem('4'))
-$('#5add .description').val(localStorage.getItem('5'))
-
-
-dateBtn.addEventListener('click', ()=> {
-    let today= new Date();
-
-    let month= today.getMonth() + 1;
-    let year= today.getFullYear();
-    let date= today.getDate();
-    
-    let current_Date= `${month}/${date}/${year}`;
-    output.innerText= current_Date;
-
-    
-    moment(currentTime).format('hh:')
-
-});
+$('#5 .description').val(localStorage.getItem('5'))
 
 })
