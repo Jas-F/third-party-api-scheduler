@@ -44,11 +44,11 @@ $('#9 .description').val(localStorage.getItem('9'))
 ## Create time-blocks using HTML
 
 ```
-        <div class='row time-block' id='9'>
-          <div class="hour1 col-md-1">9:00 A.M.</div>
-          <textarea class='description col-md-10' type='text' id= 'input'></textarea>
-          <button class='saveBtn col-md-1 btn'>Save</button>
-        </div>
+<div class='row time-block' id='9'>
+  <div class="hour1 col-md-1">9:00 A.M.</div>
+  <textarea class='description col-md-10' type='text' id= 'input'></textarea>
+  <button class='saveBtn col-md-1 btn'>Save</button>
+</div>
 ```
 
 <br>
