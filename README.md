@@ -1,4 +1,4 @@
-# third-party-api-scheduler
+# Daily Scheduler
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. Use a library like Moment.js to work with dates and times.
 
 ===========
@@ -84,7 +84,7 @@ JQuery
 
 ## Authors
 
-**Jasmine Franklin** 
+**Jasmine Franklin C: 301-332-2313 E: jasminer.franklin@gmail** 
 
 - [Link to Portfolio Site](https://jas-f.github.io/responsive-portfolio/)
 - [Link to Github](https://github.com/)
